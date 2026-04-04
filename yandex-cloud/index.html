@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Yandex-inspired search homepage built with HTML and CSS."
+    />
+    <title>Yandex Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-left">
+        <a href="#">Mail</a>
+        <a href="#">Images</a>
+        <a href="#">Maps</a>
+      </div>
+      <div class="topbar-right">
+        <a href="#">Settings</a>
+        <a class="btn-signin" href="#">Sign in</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="logo-wrap" aria-label="Yandex brand">
+        <h1 class="logo">
+          <span class="dot">Y</span>
+          <span>andex</span>
+        </h1>
+        <p class="engine-name">YANDEX SEARCH ENGINE</p>
+      </section>
+
+      <nav class="nav-tabs" aria-label="Search sections">
+        <a class="nav-tab active" href="#">
+          <img src="./assets/icons/all.svg" alt="" />
+          <span>All</span>
+        </a>
+        <a class="nav-tab" href="#">
+          <img src="./assets/icons/images.svg" alt="" />
+          <span>Images</span>
+        </a>
+        <a class="nav-tab" href="#">
+          <img src="./assets/icons/video.svg" alt="" />
+          <span>Video</span>
+        </a>
+        <a class="nav-tab" href="#">
+          <img src="./assets/icons/maps.svg" alt="" />
+          <span>Maps</span>
+        </a>
+        <a class="nav-tab" href="#">
+          <img src="./assets/icons/translate.svg" alt="" />
+          <span>Translate</span>
+        </a>
+        <a class="nav-tab" href="#">
+          <img src="./assets/icons/weather.svg" alt="" />
+          <span>Weather</span>
+        </a>
+      </nav>
+
+      <section class="search-wrap" aria-label="Search area">
+        <div class="search-bar">
+          <input
+            class="search-input"
+            type="text"
+            aria-label="Search"
+            placeholder="Find anything on the web"
+          />
+          <div class="search-icons">
+            <button class="icon-btn" type="button" aria-label="Image search">
+              Img
+            </button>
+            <button class="icon-btn" type="button" aria-label="Voice search">
+              Mic
+            </button>
+          </div>
+          <button class="search-btn" type="submit">Find</button>
+        </div>
+
+        <div class="suggest-strip">
+          <a class="suggest-tag" href="#">Trending searches</a>
+          <a class="suggest-tag" href="#">Frontend jobs</a>
+          <a class="suggest-tag" href="#">Weather today</a>
+          <a class="suggest-tag" href="#">Search with Yandex AI</a>
+          <a class="suggest-tag" href="#">Icons8 resources</a>
+        </div>
+      </section>
+
+      <section class="widgets">
+        <article class="card weather">
+          <div class="weather-icon">☀️</div>
+          <div class="weather-info">
+            <div class="card-title">Weather</div>
+            <div class="weather-temp">31°C</div>
+            <div class="weather-desc">Clear skies in Hyderabad</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Date</div>
+          <div class="card-value">04 Apr</div>
+          <div class="card-sub">Friday, afternoon update</div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Top Story</div>
+          <div class="card-value">HTML + CSS</div>
+          <div class="card-sub">Students are building search page clones this week.</div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Reminder</div>
+          <div class="card-value">Netlify</div>
+          <div class="card-sub">Deploy and share your submission link.</div>
+        </article>
+      </section>
+
+      <section class="services-section">
+        <p class="services-title">Quick Services</p>
+        <div class="services-grid">
+          <a class="service-item" href="#">
+            <div class="service-icon">
+              <img src="./assets/icons/images.svg" alt="Images" />
+            </div>
+            <span>Images</span>
+          </a>
+          <a class="service-item" href="#">
+            <div class="service-icon">
+              <img src="./assets/icons/video.svg" alt="Video" />
+            </div>
+            <span>Video</span>
+          </a>
+          <a class="service-item" href="#">
+            <div class="service-icon">
+              <img src="./assets/icons/maps.svg" alt="Maps" />
+            </div>
+            <span>Maps</span>
+          </a>
+          <a class="service-item" href="#">
+            <div class="service-icon">
+              <img src="./assets/icons/mail.svg" alt="Mail" />
+            </div>
+            <span>Mail</span>
+          </a>
+          <a class="service-item" href="#">
+            <div class="service-icon">
+              <img src="./assets/icons/weather.svg" alt="Weather" />
+            </div>
+            <span>Weather</span>
+          </a>
+          <a class="service-item" href="#">
+            <div class="service-icon">
+              <img src="./assets/icons/translate.svg" alt="Translate" />
+            </div>
+            <span>Translate</span>
+          </a>
+          <a class="service-item" href="#">
+            <div class="service-icon">
+              <img src="./assets/icons/games.svg" alt="Games" />
+            </div>
+            <span>Games</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer links">
+      <a href="#">Advertising</a>
+      <a href="#">Business</a>
+      <a href="#">About</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </footer>
+  </body>
+</html>
