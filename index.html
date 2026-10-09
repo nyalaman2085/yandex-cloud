@@ -14,13 +14,13 @@
   <body>
     <header class="topbar">
       <div class="topbar-left">
-        <a href="#">Mail</a>
-        <a href="#">Images</a>
-        <a href="#">Maps</a>
+        <a href="https://mail.yandex.com/">Mail</a>
+        <a href="https://yandex.com/images/">Images</a>
+        <a href="https://yandex.com/maps/">Maps</a>
       </div>
       <div class="topbar-right">
-        <a href="#">Settings</a>
-        <a class="btn-signin" href="#">Sign in</a>
+        <a href="https://yandex.com/">Settings</a>
+        <a class="btn-signin" href="https://passport.yandex.com/">Sign in</a>
       </div>
     </header>
 
@@ -34,57 +34,59 @@
       </section>
 
       <nav class="nav-tabs" aria-label="Search sections">
-        <a class="nav-tab active" href="#">
+        <a class="nav-tab active" href="https://yandex.com/search/">
           <img src="./assets/icons/all.svg" alt="" />
           <span>All</span>
         </a>
-        <a class="nav-tab" href="#">
+        <a class="nav-tab" href="https://yandex.com/images/">
           <img src="./assets/icons/images.svg" alt="" />
           <span>Images</span>
         </a>
-        <a class="nav-tab" href="#">
+        <a class="nav-tab" href="https://yandex.com/video/">
           <img src="./assets/icons/video.svg" alt="" />
           <span>Video</span>
         </a>
-        <a class="nav-tab" href="#">
+        <a class="nav-tab" href="https://yandex.com/maps/">
           <img src="./assets/icons/maps.svg" alt="" />
           <span>Maps</span>
         </a>
-        <a class="nav-tab" href="#">
+        <a class="nav-tab" href="https://translate.yandex.com/">
           <img src="./assets/icons/translate.svg" alt="" />
           <span>Translate</span>
         </a>
-        <a class="nav-tab" href="#">
+        <a class="nav-tab" href="https://yandex.com/">
           <img src="./assets/icons/weather.svg" alt="" />
           <span>Weather</span>
         </a>
       </nav>
 
       <section class="search-wrap" aria-label="Search area">
-        <div class="search-bar">
+        <form class="search-bar" action="https://yandex.com/search/" method="get" target="_blank" rel="noopener">
           <input
             class="search-input"
-            type="text"
+            name="text"
+            type="search"
             aria-label="Search"
             placeholder="Find anything on the web"
+            required
           />
           <div class="search-icons">
-            <button class="icon-btn" type="button" aria-label="Image search">
+            <button class="icon-btn" type="button" id="image-search" aria-label="Image search">
               Img
             </button>
-            <button class="icon-btn" type="button" aria-label="Voice search">
+            <button class="icon-btn" type="button" id="voice-search" aria-label="Voice search">
               Mic
             </button>
           </div>
           <button class="search-btn" type="submit">Find</button>
-        </div>
+        </form>
 
         <div class="suggest-strip">
-          <a class="suggest-tag" href="#">Trending searches</a>
-          <a class="suggest-tag" href="#">Frontend jobs</a>
-          <a class="suggest-tag" href="#">Weather today</a>
-          <a class="suggest-tag" href="#">Search with Yandex AI</a>
-          <a class="suggest-tag" href="#">Icons8 resources</a>
+          <a class="suggest-tag" href="https://yandex.com/search/?text=trending%20searches" target="_blank" rel="noopener">Trending searches</a>
+          <a class="suggest-tag" href="https://yandex.com/search/?text=frontend%20jobs" target="_blank" rel="noopener">Frontend jobs</a>
+          <a class="suggest-tag" href="https://yandex.com/search/?text=weather%20today" target="_blank" rel="noopener">Weather today</a>
+          <a class="suggest-tag" href="https://yandex.com/search/?text=Yandex%20AI" target="_blank" rel="noopener">Search with Yandex AI</a>
+          <a class="suggest-tag" href="https://yandex.com/search/?text=Icons8%20resources" target="_blank" rel="noopener">Icons8 resources</a>
         </div>
       </section>
 
@@ -93,70 +95,70 @@
           <div class="weather-icon">☀️</div>
           <div class="weather-info">
             <div class="card-title">Weather</div>
-            <div class="weather-temp">31°C</div>
-            <div class="weather-desc">Clear skies in Hyderabad</div>
+            <div class="weather-temp">Sample</div>
+            <div class="weather-desc">Static design placeholder — not live weather</div>
           </div>
         </article>
 
         <article class="card">
           <div class="card-title">Date</div>
-          <div class="card-value">04 Apr</div>
-          <div class="card-sub">Friday, afternoon update</div>
+          <div class="card-value" id="current-date">Date</div>
+          <div class="card-sub">Your device date</div>
         </article>
 
         <article class="card">
           <div class="card-title">Top Story</div>
           <div class="card-value">HTML + CSS</div>
-          <div class="card-sub">Students are building search page clones this week.</div>
+          <div class="card-sub">Sample content for this interface demo.</div>
         </article>
 
         <article class="card">
           <div class="card-title">Reminder</div>
-          <div class="card-value">Netlify</div>
-          <div class="card-sub">Deploy and share your submission link.</div>
+          <div class="card-value">Portfolio demo</div>
+          <div class="card-sub">Static sample widget.</div>
         </article>
       </section>
 
       <section class="services-section">
         <p class="services-title">Quick Services</p>
         <div class="services-grid">
-          <a class="service-item" href="#">
+          <a class="service-item" href="https://yandex.com/images/" target="_blank" rel="noopener">
             <div class="service-icon">
               <img src="./assets/icons/images.svg" alt="Images" />
             </div>
             <span>Images</span>
           </a>
-          <a class="service-item" href="#">
+          <a class="service-item" href="https://yandex.com/video/" target="_blank" rel="noopener">
             <div class="service-icon">
               <img src="./assets/icons/video.svg" alt="Video" />
             </div>
             <span>Video</span>
           </a>
-          <a class="service-item" href="#">
+          <a class="service-item" href="https://yandex.com/maps/" target="_blank" rel="noopener">
             <div class="service-icon">
               <img src="./assets/icons/maps.svg" alt="Maps" />
             </div>
             <span>Maps</span>
           </a>
-          <a class="service-item" href="#">
+          <a class="service-item" href="https://mail.yandex.com/" target="_blank" rel="noopener">
             <div class="service-icon">
               <img src="./assets/icons/mail.svg" alt="Mail" />
             </div>
             <span>Mail</span>
           </a>
-          <a class="service-item" href="#">
+          <a class="service-item" href="https://yandex.com/" target="_blank" rel="noopener">
             <div class="service-icon">
               <img src="./assets/icons/weather.svg" alt="Weather" />
             </div>
             <span>Weather</span>
           </a>
-          <a class="service-item" href="#">
+          <a class="service-item" href="https://translate.yandex.com/" target="_blank" rel="noopener">
             <div class="service-icon">
               <img src="./assets/icons/translate.svg" alt="Translate" />
             </div>
             <span>Translate</span>
           </a>
-          <a class="service-item" href="#">
+          <a class="service-item" href="https://yandex.com/games/" target="_blank" rel="noopener">
             <div class="service-icon">
               <img src="./assets/icons/games.svg" alt="Games" />
             </div>
@@ -167,11 +169,76 @@
     </main>
 
     <footer class="footer" aria-label="Footer links">
-      <a href="#">Advertising</a>
-      <a href="#">Business</a>
-      <a href="#">About</a>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
+      <a href="https://yandex.com/adv/" target="_blank" rel="noopener">Advertising</a>
+      <a href="https://yandex.com/" target="_blank" rel="noopener">Business</a>
+      <a href="https://yandex.com/company/" target="_blank" rel="noopener">About</a>
+      <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener">Privacy</a>
+      <a href="https://yandex.com/legal/" target="_blank" rel="noopener">Terms</a>
     </footer>
+    <script>
+      const searchInput = document.querySelector(".search-input");
+      document.querySelector("#image-search").addEventListener("click", () => {
+        const query = searchInput.value.trim();
+        if (!query) {
+          searchInput.focus();
+          searchInput.setCustomValidity("Enter a search first.");
+          searchInput.reportValidity();
+          searchInput.setCustomValidity("");
+          return;
+        }
+        window.open("https://yandex.com/images/search?text=" + encodeURIComponent(query), "_blank", "noopener");
+      });
+      document.querySelector("#voice-search").addEventListener("click", () => {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+          alert("Voice search is not supported by this browser. Please type your search instead.");
+          return;
+        }
+        const recognition = new SpeechRecognition();
+        recognition.lang = navigator.language || "en-US";
+        recognition.interimResults = false;
+        recognition.onresult = (event) => {
+          searchInput.value = event.results[0][0].transcript;
+          searchInput.focus();
+        };
+        recognition.onerror = () => alert("Voice input failed. Please type your search instead.");
+        recognition.start();
+      });
+      const date = document.querySelector("#current-date");
+      date.textContent = new Intl.DateTimeFormat(undefined, {
+        day: "2-digit", month: "short", year: "numeric"
+      }).format(new Date());
+      document.querySelectorAll(".service-item").forEach((link) => {
+        const label = link.textContent.trim();
+        const urls = {
+          Images: "https://yandex.com/images/",
+          Video: "https://yandex.com/video/",
+          Maps: "https://yandex.com/maps/",
+          Mail: "https://mail.yandex.com/",
+          Weather: "https://yandex.com/",
+          Translate: "https://translate.yandex.com/",
+          Games: "https://yandex.com/games/"
+        };
+        if (urls[label]) {
+          link.href = urls[label];
+          link.target = "_blank";
+          link.rel = "noopener";
+        }
+      });
+      document.querySelectorAll(".footer a").forEach((link) => {
+        const destinations = {
+          Advertising: "https://yandex.com/adv/",
+          Business: "https://yandex.com/",
+          About: "https://yandex.com/company/",
+          Privacy: "https://yandex.com/legal/confidential/",
+          Terms: "https://yandex.com/legal/"
+        };
+        if (destinations[link.textContent.trim()]) {
+          link.href = destinations[link.textContent.trim()];
+          link.target = "_blank";
+          link.rel = "noopener";
+        }
+      });
+    </script>
   </body>
 </html>
